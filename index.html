@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Utilizar a Inteligência Artificial na prestação transversal de cuidados farmacêuticos</title>
     <style>
@@ -20,13 +19,15 @@
         }
         
         main {
-            max-width: 800px;
+            max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
         }
         
-        section {
-            margin-bottom: 40px;
+        .section-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
         }
         
         h2 {
@@ -35,14 +36,18 @@
             padding-bottom: 10px;
         }
         
+        .column {
+            border: 1px solid #333;
+            padding: 10px;
+        }
+        
         .preview {
-            width: 750px;
-            height: 700px;
+            width: 100%;
+            height: 600px;
             border: none;
         }
     </style>
 </head>
-
 <body>
     <header>
         <h1>Utilizar a Inteligência Artificial na prestação transversal de cuidados farmacêuticos</h1>
@@ -50,189 +55,41 @@
     </header>
 
     <main>
-        <section>
-            <h2>HIV/Sida</h2>
-            <iframe class="preview" src="https://chat.openai.com/share/8a7c27d4-35e9-4018-b4ca-2ae6f0f908ec"></iframe>
-        </section>
+        <div class="section-container">
+            <div class="column">
+                <h2>HIV/Sida</h2>
+                <h3>ChatGPT</h3>
+                <iframe class="preview" src="https://chat.openai.com/share/8a7c27d4-35e9-4018-b4ca-2ae6f0f908ec"></iframe>
+            </div>
+            <div class="column">
+                <h3>Google Bard</h3>
+                <iframe class="preview" src="https://www.google.com"></iframe>
+            </div>
+        </div>
 
-        <section>
-            <h2>Esclerose Múltipla</h2>
-            <iframe class="preview" src="https://chat.openai.com/share/94d3e014-420f-408c-a5b2-139f68277ff8"></iframe>
-        </section>
+        <div class="section-container">
+            <div class="column">
+                <h2>Esclerose Múltipla</h2>
+                <h3>ChatGPT</h3>
+                <iframe class="preview" src="https://chat.openai.com/share/94d3e014-420f-408c-a5b2-139f68277ff8"></iframe>
+            </div>
+            <div class="column">
+                <h3>Google Bard</h3>
+                <iframe class="preview" src="https://www.google.com"></iframe>
+            </div>
+        </div>
 
-        <section>
-            <h2>Oncologia</h2>
-            <iframe class="preview" src="https://chat.openai.com/share/fc93fcd0-d4b5-4748-8cc0-7819580bced8"></iframe>
-        </section>
+        <div class="section-container">
+            <div class="column">
+                <h2>Oncologia</h2>
+                <h3>ChatGPT</h3>
+                <iframe class="preview" src="https://chat.openai.com/share/fc93fcd0-d4b5-4748-8cc0-7819580bced8"></iframe>
+            </div>
+            <div class="column">
+                <h3>Google Bard</h3>
+                <iframe class="preview" src="https://www.google.com"></iframe>
+            </div>
+        </div>
     </main>
 </body>
-
 </html>
-
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Utilizar a Inteligência Artificial na prestação transversal de cuidados farmacêuticos</title>
-    <style>
-        /* Estilos CSS para o layout da página */
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        
-        section {
-            margin-bottom: 40px;
-        }
-        
-        h2 {
-            color: #333;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Utilizar a Inteligência Artificial na prestação transversal de cuidados farmacêuticos</h1>
-        <h2>Resultados dos prompts</h2>
-    </header>
-
-    <main>
-        <section>
-            <h2>HIV/Sida</h2>
-            <div id="hiv"></div>
-        </section>
-
-        <section>
-            <h2>Esclerose Múltipla</h2>
-            <div id="esclerose"></div>
-        </section>
-
-        <section>
-            <h2>Oncologia</h2>
-            <div id="oncologia"></div>
-        </section>
-    </main>
-
-    <script>
-        // Função para carregar os resultados dos links usando JavaScript
-        function carregarResultado(url, elementId) {
-            fetch(url)
-                .then(response => response.json()) // Parse a resposta como JSON
-                .then(data => {
-                    document.getElementById(elementId).innerHTML = data.choices[0].message.content;
-                })
-                .catch(error => {
-                    console.error('Ocorreu um erro:', error);
-                });
-        }
-
-        // Carregar os resultados nos respectivos elementos
-        carregarResultado('https://chat.openai.com/share/fc93fcd0-d4b5-4748-8cc0-7819580bced8', 'hiv');
-        carregarResultado('https://chat.openai.com/share/94d3e014-420f-408c-a5b2-139f68277ff8', 'esclerose');
-        carregarResultado('https://chat.openai.com/share/8a7c27d4-35e9-4018-b4ca-2ae6f0f908ec', 'oncologia');
-    </script>
-</body>
-
-</html>
- -->
-<!-- <!DOCTYPE html>
-<html>
-
-<head>
-    <title>Utilizar a Inteligência Artificial na prestação transversal de cuidados farmacêuticos</title>
-    <style>
-        /* Estilos CSS para o layout da página */
-        
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        
-        main {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-        }
-        
-        section {
-            margin-bottom: 40px;
-        }
-        
-        h2 {
-            color: #333;
-            border-bottom: 1px solid #333;
-            padding-bottom: 10px;
-        }
-    </style>
-</head>
-
-<body>
-    <header>
-        <h1>Utilizar a Inteligência Artificial na prestação transversal de cuidados farmacêuticos</h1>
-        <h2>Resultados dos prompts</h2>
-    </header>
-
-    <main>
-        <section>
-            <h2>HIV/Sida</h2>
-            <div id="hiv"></div>
-        </section>
-
-        <section>
-            <h2>Esclerose Múltipla</h2>
-            <div id="esclerose"></div>
-        </section>
-
-        <section>
-            <h2>Oncologia</h2>
-            <div id="oncologia"></div>
-        </section>
-    </main>
-
-    <script>
-        // Função para carregar os resultados dos links usando JavaScript
-        function carregarResultado(url, elementId) {
-            fetch(url)
-                .then(response => response.text())
-                .then(data => {
-                    document.getElementById(elementId).innerHTML = data;
-                })
-                .catch(error => {
-                    console.error('Ocorreu um erro:', error);
-                });
-        }
-
-        // Carregar os resultados nos respectivos elementos
-        carregarResultado('https://chat.openai.com/share/fc93fcd0-d4b5-4748-8cc0-7819580bced8', 'hiv');
-        carregarResultado('https://chat.openai.com/share/94d3e014-420f-408c-a5b2-139f68277ff8', 'esclerose');
-        carregarResultado('https://chat.openai.com/share/8a7c27d4-35e9-4018-b4ca-2ae6f0f908ec', 'oncologia');
-    </script>
-</body>
-
-</html> -->
